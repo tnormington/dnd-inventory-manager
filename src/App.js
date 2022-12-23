@@ -77,7 +77,7 @@ function App() {
     } else {
       setResults([]);
     }
-  }, [currentItem]);
+  }, [currentItem, equipmentList, magicItemList]);
 
   const addToBag = async (item) => {
     if (bagContents.find((_item) => _item.index === item.index) !== undefined) {
